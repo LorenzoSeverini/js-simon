@@ -25,7 +25,6 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.6;
-    color: var(--color-secondary);
     background-color: var(--color-primary);
     font-size: 62.5%;
 }
@@ -36,18 +35,25 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1rem;
     margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+h2 {
+    font-size: 1.5625rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
 }
 
 .container {
     max-width: 120rem;
-    margin: 0 auto;
+    margin: 6.25rem auto;
     overflow: hidden;
     padding: 0 2rem;
 }
 
 .box {
     padding: 2rem;
-    margin-bottom: 2rem;
     background-color: var(--color-quaternary);
 }
 
@@ -82,30 +88,122 @@ div {
     font-size: medium;
 }
 
-.hidden {
-    display: none;
+.marginTop80 {
+    margin-top: 5rem;
 }
 
+.marginBottom80 {
+    margin-bottom: 5rem;
+}
+
+/* ************************/
+/* Media Queries */
+@media screen and (max-width: 28.125rem) {
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .btn:active {
+        transform: translateY(0);
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .flex > * {
+        margin-bottom: 1rem;
+    }
+
+    .flex > *:last-child {
+        margin-bottom: 0;
+    }
+
+    .marginTop80 {
+        margin-top: 3rem;
+    }
+
+    .marginBottom80 {
+        margin-bottom: 3rem;
+    }
+
+    .box {
+        padding: 1rem;
+    }
+
+    .div h2 {
+        font-size: 2rem;
+    }
+
+    h2 > .div {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 28.1875rem) {
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        margin-bottom: 1rem;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
 
 
+    .flex > * {
+        margin-bottom: 1rem;
+    }
 
+    .flex > *:last-child {
+        margin-bottom: 0;
+    }
 
+    .marginTop80 {
+        margin-top: 3rem;
+    }
 
+    .marginBottom80 {
+        margin-bottom: 3rem;
+    }
 
+    .box {
+        padding: 1rem;
+    }
 
+    .div h2 {
+        font-size: 2rem;
+    }
 
+    h2 > .div {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
 
+@media screen and (min-width: 56.25rem) {
+    .btn {
+        width: 20%;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
