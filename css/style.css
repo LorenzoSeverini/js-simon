@@ -1,0 +1,111 @@
+/****************************/
+/********* *RESET ***********/
+/****************************/
+
+:root
+{
+  --color-primary: #3b3331;
+  --color-secondary: #efe8cb;
+  --color-tertiary: #90c1c5;
+  --color-quaternary: #d2603b;
+  --color-quinary: #e9b44c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***********************/
+/********* BASE ********/
+/***********************/
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.box {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--color-quaternary);
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 1px solid var(--color-quinary);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-quinary);
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div {
+    font-size: medium;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
