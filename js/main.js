@@ -25,6 +25,11 @@ document.getElementById('reset').addEventListener('click', resetGame,);
 function initGame() {
     generateNumbers(); 
     setTimer();
+    
+    // when the user click on the button start again all the value are reset 
+    document.getElementById('userNumbers').innerHTML = '';
+    document.getElementById('matchedNumbers').innerHTML = '';
+    document.getElementById('result').innerHTML = '';
 }
 
 // Reset the Simon Says game
